@@ -15,39 +15,39 @@
 
 **Step 1: Creating a New Pluggable Database PDB**
 ``` sql
-create pluggable database Mu_pdb_27811
-  2  admin user Mugisha_plsqlauca_27811 identified by "blessed"
+create pluggable database Em_pdb_27811
+  2  admin user Emmanuel_plsqlauca_27811 identified by "blessed"
   3  file_name_convert = (
   4  'C:\app\DELL\product\21c\oradata\XE\pdbseed',
-  5  'C:\app\DELL\product\21c\oradata\XE\Mu_pdb_27811'
+  5  'C:\app\DELL\product\21c\oradata\XE\Em_pdb_27811'
   6  );
 ```
-<img src= "https://github.com/Tomley25/plsql-Pluggable-Database-Creation-Deletion-OEM-Emmanuel-MUGISHA/blob/main/PDB/CREATE%20PDB.png" width=600>
-<img scr= "https://github.com/Tomley25/plsql-Pluggable-Database-Creation-Deletion-OEM-Emmanuel-MUGISHA/blob/main/PDB/SHOW%20PDBS%201.png" width=400>
+<img src= "PDBS/CREATE PDB.png" width=600>
+<img scr= "PDBS/SHOW PDBS 1.png" width=400>
 
 **Step 2: Creating and Deleting a PDB**
 > *Creating*
 ```sql
-create pluggable database Mu_to_delete_pdb_27811
-  2  admin user Mugisha_plsqlauca_27811 identified by "blessed"
+create pluggable database Em_to_delete_pdb_27811
+  2  admin user Emmanuel_plsqlauca_27811 identified by "blessed"
   3  file_name_convert = (
   4  'C:\app\DELL\product\21c\oradata\XE\pdbseed',
-  5  'C:\app\DELL\product\21c\oradata\XE\Mu_to_delete_pdb_27811'
+  5  'C:\app\DELL\product\21c\oradata\XE\Em_to_delete_pdb_27811'
   6  );
 ```
-<img src= "https://github.com/Tomley25/plsql-Pluggable-Database-Creation-Deletion-OEM-Emmanuel-MUGISHA/blob/main/PDB/CREATE%20TO_DELETE%20PDB.png" width=600>
-<img src= "https://github.com/Tomley25/plsql-Pluggable-Database-Creation-Deletion-OEM-Emmanuel-MUGISHA/blob/main/PDB/ALTER%20PDB%20TO_DELETE%20OPEN.png">
+<img src= "PDBS/CREATE TO_DELETE PDB.png" width=600>
+<img src= "PDBS/ALTER PDB TO_DELETE CLOSE.png.png">
 
 > *Deleting*
 ```sql
-drop pluggable database Mu_to_delete_pdb_27811 including datafiles;
+drop pluggable database Em_to_delete_pdb_27811 including datafiles;
 ```
-<img src= "https://github.com/Tomley25/plsql-Pluggable-Database-Creation-Deletion-OEM-Emmanuel-MUGISHA/blob/main/PDB/DROP%20PDB.png" width=600>
+<img src= "PDBS/DROP PDB.png" width=600>
 
 **Step 3: Oracle Enterprise Manager**
 <p>Here we link the database to Oracle Enterprise Manager for monitoring and management. In which it allows visual access to database performance, storage, and user sessions through the OEM dashboard.</p>  
 
-<img src="https://github.com/Tomley25/plsql-Pluggable-Database-Creation-Deletion-OEM-Emmanuel-MUGISHA/blob/main/PDB/OEM%20Dashboard.png" weight=400>
+<img src="PDBS/OEM Dashboard.png" weight=400>
 
 ---
 
@@ -57,10 +57,10 @@ drop pluggable database Mu_to_delete_pdb_27811 including datafiles;
 > Other relating Tables are the following:
 
 <p float='left'>
-<img src= "https://github.com/Tomley25/plsql-Pluggable-Database-Creation-Deletion-OEM-Emmanuel-MUGISHA/blob/main/PDB/ALTER%20PDB%20SAVE%20STATE.png" width=400>
-<img src= "PDB/ALTER PDB TO_DELETE CLOSE.png" width=400>
-<img src= "PDB/ALTER SESSION SET CONTAINER.png" width=400>
-<img src= "PDB/ALTER PDB TO_DELETE CLOSE.png" width=400>
+<img src= "PDBS/ALTER PDB SAVE STATE.png" width=400>
+<img src= "PDBS/ALTER PDB TO_DELETE CLOSE.png" width=400>
+<img src= "PDBS/ALTER SESSION SET CONTAINER.png" width=400>
+<img src= "PDBS/ALTER PDB TO_DELETE OPEN.png" width=400>
 </p>
 
 
